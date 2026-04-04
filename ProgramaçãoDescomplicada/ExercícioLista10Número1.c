@@ -1,9 +1,9 @@
 /** Descrição:
     1. Crie um programa que:
-    (a) Aloque dinamicamente um array de 5 n ´umeros inteiros,
-    (b) Pec¸a para o usu ´ario digitar os 5 n ´umeros no espac¸o alocado,
-    (c) Mostre na tela os 5 n ´umeros,
-    (d) Libere a mem ´oria alocada.
+    (a) Aloque dinamicamente um array de 5 números inteiros,
+    (b) Peça para o usuário digitar os 5 números no espaço alocado,
+    (c) Mostre na tela os 5 números,
+    (d) Libere a memória alocada.
 */
 
 #include <stdio.h>
