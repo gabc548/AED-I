@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

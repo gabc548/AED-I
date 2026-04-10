@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/search-insert-position/
+
 #include <stdio.h>
 
 int searchInsert(int* nums, int numsSize, int target); // This function is the solution to the problem

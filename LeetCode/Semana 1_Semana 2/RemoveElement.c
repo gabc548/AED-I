@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/remove-element/
+
 #include <stdio.h>
 #include <stdlib.h>
 

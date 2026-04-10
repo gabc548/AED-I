@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/furthest-point-from-origin/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -6,7 +8,7 @@ int furthestDistanceFromOrigin(char* moves); // This function is the solution to
 
 int main(){
     char moves[10] = {'L', '_', 'R', '_', 'L', 'R', '_', 'R', 'R', 'R'};
-    int target = 6; // I don't really know how the main from the program may check it
+    int target = 6;
 
     int Output = furthestDistanceFromOrigin(moves);
 
