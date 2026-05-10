@@ -28,5 +28,7 @@ Descrição:
 Testes especiais feitos:
 
 Testado remoção e busca com duas pessoas tendo o campo nome e o campo e-mail iguais
-Testado adição com nome vazio
+
+Testado adição de nome vazio
+
 Testado remoção  e busca com duas pessoas tendo o mesmo nome
