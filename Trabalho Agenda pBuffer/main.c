@@ -316,6 +316,8 @@ void* Busca ( void *pBuffer, int *sizeOfBuffer, int* count, char *currentChar, i
     if ( *count == *compareWordIndex ) { //Se os ponteiros tiverem o mesmo valor
         *indexInicialRemove = 0; //Index inicial da pessoa a ser removida (ou buscada no geral) é definida como 0, indicando que ela não existe na agenda
         printf ( "\n\nO usuario nao existe na agenda\n\n" );
+    } else if ( *flag == 1 ) {
+        *indexInicialRemove = 0;
     }
     
     void *tmp = realloc ( pBuffer, *sizeOfBuffer - *sizeOfSearch ); //Retira o campo auxiliar no final do pBuffer que continha o nome da pessoa a ser buscada
