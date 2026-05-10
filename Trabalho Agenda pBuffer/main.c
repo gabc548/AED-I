@@ -3,10 +3,10 @@
 
 void Lista ( void *pBuffer, int *sizeOfBuffer, int *count );
 void* Adiciona ( void *pBuffer, int *sizeOfBuffer, char *currentChar, int *sizeOfSearch, int *flag );
-void* Busca( void *pBuffer, int *sizeOfBuffer, int* count, char *currentChar, int *sizeOfSearch, int *indexInicialRemove, int *flag, int* compareWordIndex );
-void* Remove( void *pBuffer, int *sizeOfBuffer, int* count, char *currentChar, int *sizeOfSearch, int *indexInicialRemove, int *flag, int* compareWordIndex );
+void* Busca ( void *pBuffer, int *sizeOfBuffer, int* count, char *currentChar, int *sizeOfSearch, int *indexInicialRemove, int *flag, int* compareWordIndex );
+void* Remove ( void *pBuffer, int *sizeOfBuffer, int* count, char *currentChar, int *sizeOfSearch, int *indexInicialRemove, int *flag, int* compareWordIndex );
 
-int main(){
+int main ( ) {
 
     void *pBuffer;
     pBuffer = malloc ( 6 * sizeof ( int ) + sizeof ( char ) );
@@ -87,12 +87,12 @@ int main(){
             *count = 0;
             sizeOfSearch = &( ( int* ) pBuffer )[2];
             *sizeOfSearch = 0;
-            indexInicialRemove = &((int*)pBuffer)[3];
-            flag = &((int*)pBuffer)[4];
+            indexInicialRemove = &( ( int* ) pBuffer )[3];
+            flag = &( ( int* ) pBuffer )[4];
             *flag = 0;
-            compareWordIndex = &((int*)pBuffer)[5];
+            compareWordIndex = &( ( int* ) pBuffer )[5];
             *compareWordIndex = 0;
-            currentChar = &((char*)pBuffer)[24];
+            currentChar = &( ( char* ) pBuffer )[24];
             break;
 
             case 5:
