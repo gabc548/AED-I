@@ -329,7 +329,7 @@ void* Busca ( void *pBuffer, int *sizeOfBuffer, int* count, char *currentChar, i
     indexInicialRemove = &( ( int* ) pBuffer )[3];
     *sizeOfBuffer = *sizeOfBuffer - *sizeOfSearch; //Diminui o valor do tamanho do buffer de acordo com o que foi tirado no realloc
 
-    for( *indexInicialRemove; ( ( char* ) pBuffer ) [*indexInicialRemove + *sizeOfSearch] != ';', *indexInicialRemove + *sizeOfSearch < *sizeOfBuffer - 1; ) { //Enquanto *indexInicialRemove e *sizeOfSearch não forem distantes o suficiente pra englobar o tamanho das informações da pessoa a ser removida
+    for( *indexInicialRemove; ( ( char* ) pBuffer ) [*indexInicialRemove + *sizeOfSearch] != ';' && *indexInicialRemove + *sizeOfSearch < *sizeOfBuffer - 1; ) { //Enquanto *indexInicialRemove e *sizeOfSearch não forem distantes o suficiente pra englobar o tamanho das informações da pessoa a ser removida
         ( *sizeOfSearch )++;
     }
     ( *sizeOfSearch )++; //Para incluir o delimitador
