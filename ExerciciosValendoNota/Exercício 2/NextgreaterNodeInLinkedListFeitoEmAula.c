@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+    
+    A função main foi adicionada em casa
+    
+*/
 
 struct ListNode {
     int val;
@@ -92,7 +97,7 @@ int* nextLargerNodes ( struct ListNode* head, int* returnSize ) {
                 }
 
             }
-            
+
         }
 
         stackValues[topo] = ptrListAux->val;
