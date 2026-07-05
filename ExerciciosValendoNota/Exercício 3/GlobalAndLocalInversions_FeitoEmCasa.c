@@ -32,7 +32,7 @@ static ArvoreNode *Rebalancear( ArvoreNode *n );
 void Liberar( ArvoreNode *n );
 
 
-bool isIdealPermutation(int *nums, int numsSize);
+bool isIdealPermutation( int *nums, int numsSize );
 
 
 
@@ -61,22 +61,22 @@ int main(){
     printf("%d\n", isIdealPermutation(t10, 4));
 }
 
-bool isIdealPermutation(int *nums, int numsSize){
+bool isIdealPermutation( int *nums, int numsSize ) {
     ArvoreNode *root;
     root = NULL;
     long long int paresLocais = 0, paresGlobais = 0;
 
-    for(int i = 0; i < numsSize; i++){
-        root = Inserir(root, nums[i], &paresGlobais);
+    for( int i = 0; i < numsSize; i++ ) {
+        root = Inserir( root, nums[i], &paresGlobais );
     }
 
-    for(int i = 0; i < numsSize - 1; i++){
-        if(nums[i] > nums[i + 1]){
+    for( int i = 0; i < numsSize - 1; i++ ) {
+        if( nums[i] > nums[i + 1] ) {
             paresLocais++;
         }
     }
 
-    Liberar(root);
+    Liberar( root );
 
     return paresGlobais == paresLocais;
 }
